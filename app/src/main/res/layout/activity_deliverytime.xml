@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/snow2"
+    tools:context=".deliverytime">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER TIMINGS"
+        android:textSize="30sp"
+        android:textColor="@color/Red"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageviewdeliverytiming"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/time"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/BlueGrey"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/radiotime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectordertime"
+            android:text="11:45-12:15" />
+
+        <RadioButton
+            android:id="@+id/radiotime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectordertime"
+            android:text="12:15-12:45" />
+
+        <RadioButton
+            android:id="@+id/radiotime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectordertime"
+            android:text="12:45-13:15" />
+
+        <RadioButton
+            android:id="@+id/radiotime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectordertime"
+            android:text="13:15-13:45" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:onClick="gotonextactivity3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="NEXT"/>
+
+</LinearLayout>

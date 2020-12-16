@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="@color/Maroon"
+    app:cardElevation="10dp"
+    android:layout_margin="20dp"
+    android:padding="5dp"
+    android:id="@+id/cardview2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/atextview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/Blue"
+            android:text="House or apartment no"
+            />
+        <TextView
+            android:id="@+id/atextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/LightBlue"
+            android:text="Street Name"
+            />
+        <TextView
+            android:id="@+id/atextview3"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/LightGreen"
+            android:text="City or Town"
+            />
+        <TextView
+            android:id="@+id/atextview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/Red"
+            android:text="Pin code"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

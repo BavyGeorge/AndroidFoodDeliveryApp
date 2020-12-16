@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_values1">
+    <item>none</item>
+    <item>ranch</item>
+    <item>vinaigrette</item>
+    </string-array>
+</resources>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snow"
+    android:orientation="vertical"
+    tools:context=".OrderScreen">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="500dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT YOUR ORDER"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:onClick="saveorderitems"
+                android:layout_height="wrap_content"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity needed: "
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/LightPink"/>
+                <EditText
+                    android:id="@+id/quantityedittext1"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:hint="quantity"
+                    android:layout_height="wrap_content"/>
+<!--                <Button-->
+<!--                    android:id="@+id/quantitybutton1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:onClick="savequantity"-->
+<!--                    style="@style/Widget.AppCompat.Button.Borderless.Colored"-->
+<!--                    android:text="save quantity"/>-->
+<!--                <Button-->
+<!--                    android:id="@+id/savenotebutton1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/Maroon"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:onClick="addnotebutton"-->
+<!--                    style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                    android:text="Add note"/>-->
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edittextnote1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Add Note"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Salad Lunch"
+                android:textColor="@color/Blue"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/greensaladlunch"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dressing Choices:"
+                android:textColor="@color/Orange"
+                android:layout_gravity="center"
+                />
+
+            <RadioGroup
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/BlueGrey"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:id="@+id/orderrb1"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="none" />
+                <RadioButton
+                    android:id="@+id/orderrb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:text="ranch"/>
+                <RadioButton
+                    android:id="@+id/orderrb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:text="vinaigrette"/>
+            </RadioGroup>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:onClick="saveorderitems"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity needed: "
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/LightPink"/>
+            <EditText
+                android:id="@+id/quantityedittext2"
+                android:layout_width="wrap_content"
+                android:inputType="number"
+                android:hint="quantity"
+                android:layout_height="wrap_content"/>
+<!--            <Button-->
+<!--                android:id="@+id/quantitybutton2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:onClick="savequantity"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless.Colored"-->
+<!--                android:text="save quantity"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/savenotebutton2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textColor="@color/Maroon"-->
+<!--                android:onClick="addnotebutton"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:text="Add note"/>-->
+
+
+
+        </LinearLayout>
+
+            <EditText
+                android:id="@+id/edittextnote2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Add Note"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lamb Korma"
+                android:layout_gravity="center"
+                android:textColor="@color/Blue"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lambkorma"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choices:"
+                android:textColor="@color/Orange"
+                android:layout_gravity="center"/>
+            <RadioGroup
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/BlueGrey"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:id="@+id/orderrb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:text="mild"/>
+                <RadioButton
+                    android:id="@+id/orderrb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:text="med"/>
+                <RadioButton
+                    android:id="@+id/orderrb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:text="hot"/>
+            </RadioGroup>
+
+<!--            <Spinner-->
+<!--                android:id="@+id/orderscreenspinner2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:entries="@array/spinner_values2"-->
+<!--                android:layout_gravity="center"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:onClick="saveorderitems"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="Quantity needed: "
+                android:textColor="@color/LightPink"/>
+            <EditText
+                android:id="@+id/quantityedittext3"
+                android:layout_width="wrap_content"
+                android:inputType="number"
+                android:hint="quantity"
+                android:layout_height="wrap_content"/>
+<!--            <Button-->
+<!--                android:id="@+id/quantitybutton3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="savequantity"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless.Colored"-->
+<!--                android:text="save quantity"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/savenotebutton3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textColor="@color/Maroon"-->
+<!--                android:onClick="addnotebutton"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:text="Add note"/>-->
+
+
+
+        </LinearLayout>
+
+            <EditText
+                android:id="@+id/edittextnote3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Add Note"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Open Chicken Sandwich "
+                android:textColor="@color/Blue"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/openchickensandwich"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bread Choices:"
+                android:textColor="@color/Orange"
+                android:layout_gravity="center"/>
+
+            <RadioGroup
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/BlueGrey"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:id="@+id/orderrb7"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="white"/>
+                <RadioButton
+                    android:id="@+id/orderrb8"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="rye"/>
+                <RadioButton
+                    android:id="@+id/orderrb9"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="wholmeal"/>
+            </RadioGroup>
+
+<!--            <Spinner-->
+<!--                android:id="@+id/orderscreenspinner3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:entries="@array/spinner_values3"-->
+<!--                android:layout_gravity="center"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:onClick="saveorderitems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="Quantity needed: "
+                android:textColor="@color/LightPink"/>
+            <EditText
+                android:id="@+id/quantityedittext4"
+                android:layout_width="wrap_content"
+                android:inputType="number"
+                android:hint="quantity"
+                android:layout_height="wrap_content"/>
+<!--            <Button-->
+<!--                android:id="@+id/quantitybutton4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="savequantity"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless.Colored"-->
+<!--                android:text="save quantity"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/savenotebutton4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textColor="@color/Maroon"-->
+<!--                android:onClick="addnotebutton"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:text="Add note"/>-->
+
+
+
+        </LinearLayout>
+
+            <EditText
+                android:id="@+id/edittextnote4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Add Note"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Beef Noodle Salad"
+                android:textColor="@color/Blue"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/beefnoodlesalad"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choices:"
+                android:textColor="@color/Orange"
+                android:layout_gravity="center"/>
+
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/BlueGrey"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:id="@+id/orderrb10"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="no chilli flakes"/>
+                <RadioButton
+                    android:id="@+id/orderrb11"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="regular chilli flakes"/>
+                <RadioButton
+                    android:id="@+id/orderrb12"
+                    android:layout_width="wrap_content"
+                    android:onClick="radiobuttonhandling"
+                    android:layout_height="wrap_content"
+                    android:text="extra chilli flakes"/>
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gotocreditcardactivity"
+                android:layout_margin="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="next"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="@color/Maroon"
+    app:cardElevation="10dp"
+    android:layout_margin="20dp"
+    android:padding="5dp"
+    android:id="@+id/cardview1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ctextview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/Blue"
+            android:text="Card No"
+            />
+        <TextView
+            android:id="@+id/ctextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/LightBlue"
+            android:text="Name on card"
+            />
+        <TextView
+            android:id="@+id/ctextview3"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/LightGreen"
+            android:text="Expiry Date"
+            />
+        <TextView
+            android:id="@+id/ctextview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/Red"
+            android:text="Cvv no"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

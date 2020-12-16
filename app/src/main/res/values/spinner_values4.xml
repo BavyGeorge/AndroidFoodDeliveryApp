@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_values4">
+        <item>no chilli flakes</item>
+        <item>regular chilli flakes</item>
+        <item>extra chilli flakes</item>
+    </string-array>
+</resources>
